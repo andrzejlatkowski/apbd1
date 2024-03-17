@@ -14,7 +14,22 @@ public static class Lab1
         double res = sum / x.Length;
         return res;
     }
+
+    public static int Max(int[] x)
+    {
+        int res = x[0];
+        for (int i = 1; i < x.Length; i++)
+        {
+            if (x[i] > res)
+            {
+                res = x[i];
+            }
+        }
+
+        return res;
+    }
 }
+
 
 internal abstract class Program
 {
@@ -23,5 +38,8 @@ internal abstract class Program
         int[] numbers = [1, 2, 3, 4];
         double res = Lab1.Average(numbers);
         Console.WriteLine(res);
+
+        int max = Lab1.Max(numbers);
+        Console.WriteLine(max);
     }
 }
