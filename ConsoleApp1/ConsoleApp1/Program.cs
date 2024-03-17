@@ -18,11 +18,11 @@ public static class Lab1
     public static int Max(int[] x)
     {
         int res = x[0];
-        for (int i = 1; i < x.Length; i++)
+        for (int j = 1; j < x.Length; j++)
         {
-            if (x[i] > res)
+            if (x[j] > res)
             {
-                res = x[i];
+                res = x[j];
             }
         }
 
