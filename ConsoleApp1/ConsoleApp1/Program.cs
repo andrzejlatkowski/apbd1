@@ -18,11 +18,19 @@ public static class Lab1
     public static int Max(int[] x)
     {
         int res = x[0];
+<<<<<<< HEAD
         for (int k = 1; k < x.Length; k++)
         {
             if (x[k] > res)
             {
                 res = x[k];
+=======
+        for (int j = 1; j < x.Length; j++)
+        {
+            if (x[j] > res)
+            {
+                res = x[j];
+>>>>>>> feature-new
             }
         }
 
