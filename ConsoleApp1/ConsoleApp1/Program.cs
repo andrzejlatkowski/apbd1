@@ -4,29 +4,12 @@ public static class Lab1
 {
     public static double Average(int[] x)
     {
-        double sum = 0;
-        foreach (var t in x)
-        {
-            sum += t;
-        }
-
-
-        double res = sum / x.Length;
-        return res;
+        return x.Average();
     }
 
     public static int Max(int[] x)
     {
-        int res = x[0];
-        for (int k = 1; k < x.Length; k++)
-        {
-            if (x[k] > res)
-            {
-                res = x[k];
-            }
-        }
-
-        return res;
+        return x.Max();
     }
 }
 
